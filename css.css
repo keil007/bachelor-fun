@@ -1,0 +1,30 @@
+body
+{
+    margin:0 12vw;
+    overflow-x: hidden;
+}
+
+#content
+{
+    background-color: khaki;
+    width:auto;
+    height:5000px;
+}
+
+header
+{
+    height:100px;
+    background-color: lightcoral;
+}
+
+main
+{
+    height:500px;
+    background-color: honeydew;
+}
+
+footer
+{
+    height:100px;
+    background-color: darkorange;
+}

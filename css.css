@@ -1,30 +1,109 @@
 body
 {
-    margin:0 12vw;
+    margin:0 0; /* 0 12vw*/
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: TeslaFont;
+    src: url(font/TESLA.ttf);
+  }
+
 #content
 {
-    background-color: khaki;
+    background-image:linear-gradient(to bottom right, rgb(92, 9, 9),rgb(214, 21, 21));
     width:auto;
     height:5000px;
 }
 
 header
 {
-    height:100px;
-    background-color: lightcoral;
+    height:530px;
+}
+
+#top
+{
+    height: 430px;
+    text-align: center;
+    font-size: 76px;
+    font-family:TeslaFont;
+    color: #222;
+    letter-spacing: 15px;
+}
+
+#top img
+{
+    width:300px;
+    height: auto;
+    margin:auto;
+    margin-top: 20px;
+}
+
+#topnav
+{
+    padding-top: 0px;
+}
+
+#topnav ul
+{
+    text-align: center;
+}
+
+#topnav ul > li
+{
+    display: inline-block;
+    font-size: 30px;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #222;
+    transition: all 0.7s ease-in-out;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#topnav ul > li:hover
+{
+    background-color: #eee;
+    color:#222;
+}
+
+#topnav a
+{
+    text-decoration: none;
+    color:rgb(214, 21, 21);
+    cursor: initial;
 }
 
 main
 {
-    height:500px;
-    background-color: honeydew;
+    height:2500px;
+    background-color: transparent;
+    width:66vw;
+    margin:auto;
+}
+
+.block
+{
+    display: inline-block;
+    width:32.5vw;
+    height:32.5vw;
+    margin-top: 1vw;
+    background-color: #eee;
+}
+
+.block img
+{
+    width:100%;
+    height:100%;
+    border-radius: 2%;
+}
+
+.block:nth-child(even)
+{
+    float: right;
 }
 
 footer
 {
     height:100px;
-    background-color: darkorange;
 }

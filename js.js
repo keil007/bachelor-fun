@@ -1,12 +1,11 @@
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("topnav");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 440) {
+      $("#topnav").addClass("topnav-stick");
+      //$("#topnav ul").addClass("topnav-stick-ul");
+    } else {
+      $("#topnav").removeClass("topnav-stick");
+      //$("#topnav ul").removeClass("topnav-stick-ul");
+    }
+  });
+});

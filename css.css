@@ -37,20 +37,15 @@ body
     margin-top: 20px;
 }
 
-hr
-{
-    height:2px;
-    border-width:0;
-    background-color:#222;
-}
-
 #topnav
 {
-    padding-top: 1px;
+    padding-top: 10px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 7;
+    border-top: 2px #222 solid;
+    border-bottom: 2px #222 solid;
 }
 
 #topnav ul
@@ -64,7 +59,7 @@ hr
     font-size: 30px;
     height: 50px;
     padding: 0 20px;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.6s ease-in-out;
     text-align: center;
     border-radius: 15px;
 }
@@ -72,7 +67,7 @@ hr
 #topnav ul > li:hover
 {
     background-color:rgb(92, 9, 9);
-    text-shadow: 1px 1px 3px #bbb, 1px -1px 3px #bbb, -1px 1px 3px #bbb, -1px -1px 3px #bbb;
+    text-shadow: 2px 2px 5px #bbb, 2px -2px 5px #bbb, -2px 2px 5px #bbb, -2px -2px 5px #bbb;
     color:#222;
 }
 
@@ -83,10 +78,17 @@ hr
     cursor: initial;
 }
 
-.sticky
+.topnav-stick
 {
-    background-color:#000;
+    background-image:linear-gradient(to right, rgb(92, 9, 9), rgb(159, 15, 15));
+    padding-top: 0;
 }
+/*
+.topnav-stick-ul
+{  
+    height: 30px;
+    margin: 0px 0px 15px;
+}*/
 
 main
 {
@@ -123,12 +125,14 @@ main
     background-color: transparent;
     text-shadow: 4px 4px 8px #000;
     color: #eee;
-    transition:all 0.6s ease-in-out;
+    transition:all 1s ease-in-out;
 }
 
 .block-1:hover
 {
-    background-color: rgb(100, 31, 31);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
 }
 
 .block-2 img

@@ -16,7 +16,7 @@ body
 {
     background-image:linear-gradient(to bottom right, rgb(92, 9, 9),rgb(177, 30, 30));
     width:auto;
-    height:2815px;
+    height:auto;
 }
 
 #top
@@ -90,6 +90,7 @@ body
     margin: 0px 0px 15px;
 }*/
 
+/* ------------------------------------------------------------------------------------------------------ MAIN ------------------------------------------------------------------------------------------------------*/
 
 main
 {
@@ -122,6 +123,7 @@ display:flex;
 width=height;
 
 Dla większych urządzeń, width i height będą po połowie, dla mniejszych po całości
+Jak main będzie miał flex, to i nie muszę się martwić o jego height
 
 align-items=center;
 justify-content:center;
@@ -172,6 +174,8 @@ footer
     padding-top: 20px;
     transition: all 0.6s ease-out;
 }
+
+/* ---------------------------------------------------------------------------------------------------- FOOTER ----------------------------------------------------------------------------------------------------*/
 
 .footer a
 {
@@ -228,6 +232,8 @@ footer img
         -ms-transform: scale(1.05);
     }
 }
+
+/* ---------------------------------------------------------------------------------------------------- QUERIES ----------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 1300px) {
     .block {
